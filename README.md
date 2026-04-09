@@ -27,6 +27,9 @@ deliver the right values of both the booleans and strings as set in the project 
 
 <img width="1121" height="243" alt="Screenshot 2026-04-09 201917" src="https://github.com/user-attachments/assets/e68a4cd0-930c-4b62-a14f-8fc084ed260b" />
 
+<img width="592" height="207" alt="Screenshot 2026-04-09 202230" src="https://github.com/user-attachments/assets/98070cf4-12ec-4ba0-b8e0-03639359bca1" />
+
+
 
 
 
