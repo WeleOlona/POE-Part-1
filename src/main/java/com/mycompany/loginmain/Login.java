@@ -20,7 +20,7 @@ import java.util.regex.Matcher;
     private String firstName;
     private String lastName;
 
-    //make sure that the user name has an underscore and does not have more than 5 characters
+    //ensure that the user name has an underscore and does not have more than 5 characters
     public boolean checkUserName(String username) {
         return username.contains("underscore(_)") && username.length() <= 5;
     }
@@ -35,13 +35,13 @@ import java.util.regex.Matcher;
     }
 
    
-    //must have the correct length and international code (South Africa strats with +27)
+    //needs to be of the right length and international code (South Africa strats with +27)
     public boolean checkCellPhoneNumber(String cellNumber) {        
         String regex = "^\\+27\\d{9}$";
         return Pattern.matches(regex, cellNumber);
     }
 
-   // Returns the status message based on the validation logic.
+   // Lays out the status message depending on the validation logic.
     public String registerUser(String username, String password, String cell, String fName, String lName) {
         if (!checkUserName(username)) {
             return "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.";
@@ -55,16 +55,16 @@ import java.util.regex.Matcher;
         this.firstName = fName;
         this.lastName = lName;
         
-        return "Username and Password successfully captured.";
+        return "Successfully captured Username and Password.";
     }
 
    
-    // Verifies that entered details match the registered details.
+    // Checks that entered details match the registered details.
     public boolean loginUser(String enteredUser, String enteredPass) {
         return enteredUser.equals(this.registeredUsername) && enteredPass.equals(this.registeredPassword);
     }
 
-       // Returns the success or failure message for the login attempt.
+       // gives the success or failure message for the login attempt.
     public String returnLoginStatus(boolean isLoggedIn) {
         if (isLoggedIn) {
             return "Welcome " + firstName + ", " + lastName + " it is great to see you again.";
