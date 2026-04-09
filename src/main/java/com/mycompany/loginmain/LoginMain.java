@@ -8,9 +8,59 @@ package com.mycompany.loginmain;
  *
  * @author lab_services_student
  */
+import java.util.Scanner;
 public class LoginMain {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+        public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Login authSystem = new Login();
+
+        System.out.println("--- User Registration ---");
+        
+        // 1. Capture Registration Details
+        System.out.print("Enter First Name: ");
+        String fName = input.nextLine();
+        
+        System.out.print("Enter Last Name: ");
+        String lName = input.nextLine();
+        
+        System.out.print("Enter Username (must contain '_' and be <= 5 chars): ");
+        String user = input.nextLine();
+        
+        System.out.print("Enter Password (8+ chars, Uppercase, Number, Special Char): ");
+        String pass = input.nextLine();
+
+        System.out.print("Enter Cell Phone Number (e.g., +27838968976): ");
+        String cell = input.nextLine();
+
+        //cotinue and display message
+        String regMessage = authSystem.registerUser(user, pass, cell, fName, lName);
+        System.out.println("\n" + regMessage);
+
+       //if the registration is a success
+        if (regMessage.equals("Username and Password successfully captured.")) {
+            
+            System.out.println("\n--- User Login ---");
+            
+            System.out.print("Enter Username: ");
+            String loginUser = input.nextLine();
+            
+            System.out.print("Enter Password: ");
+            String loginPass = input.nextLine();
+
+         //check if the credentiials are valid
+            boolean loginSuccess = authSystem.loginUser(loginUser, loginPass);
+            
+          //show final status message
+            String statusMessage = authSystem.returnLoginStatus(loginSuccess);
+            System.out.println("\n" + statusMessage);
+            
+        } else {
+            System.out.println("\nRegistration failed. Please restart the application and follow the formatting rules.");
+        }
+
+        input.close();
     }
 }
+    
+
