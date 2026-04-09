@@ -22,7 +22,7 @@ import java.util.regex.Matcher;
 
     //make sure that the user name has an underscore and does not have more than 5 characters
     public boolean checkUserName(String username) {
-        return username.contains("_") && username.length() <= 5;
+        return username.contains("underscore(_)") && username.length() <= 5;
     }
 
     
