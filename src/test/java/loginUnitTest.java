@@ -32,7 +32,7 @@ public class loginUnitTest {
 
     @Test
     public void testPasswordComplexity() {
-        // Test Data: "Ch&&sec@ke99!" should be true
+        //  "Ch&&sec@ke99!" should be true
         assertTrue(login.checkPasswordComplexity("Ch&&sec@ke99!"));
     }
 }
