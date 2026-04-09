@@ -1,7 +1,7 @@
-Registration And Login System
-Overview
+#Registration And Login System
+##Overview
 A secure authentication system that was developed to manage user registration,credential validation and status reporting of login. The application adhere to rigid Object-Oriented. Security rubrics are determined by programming principles
-Core Features
+##Core Features
 1. Registration Validation
    Username: Accepts the presence of underscore and a limit of 5 characters
    Password: Uses Regex to make it complex(Uppercase, Number,Special Character,8+ Length)
