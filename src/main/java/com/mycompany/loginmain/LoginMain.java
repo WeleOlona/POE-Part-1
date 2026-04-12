@@ -19,17 +19,13 @@ public class LoginMain {
         
         // 1. Capture Registration Details
         System.out.print("Enter First Name: ");
-        String fName = input.nextLine();
-        
+        String fName = input.nextLine();       
         System.out.print("Enter Last Name: ");
-        String lName = input.nextLine();
-        
-        System.out.print("Enter Username (must contain '_' and be <= 5 chars): ");
-        String user = input.nextLine();
-        
-        System.out.print("Enter Password (8+ chars, Uppercase, Number, Special Char): ");
+        String lName = input.nextLine();        
+        System.out.print("Enter Username (must contain underscore(_) and be <= 5 characters): ");
+        String user = input.nextLine();        
+        System.out.print("Enter Password (8+ characters, Uppercase, Number, Special Characters): ");
         String pass = input.nextLine();
-
         System.out.print("Enter Cell Phone Number (e.g., +27838968976): ");
         String cell = input.nextLine();
 
