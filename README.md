@@ -23,6 +23,8 @@ The system uses the java.util.regex to validate and the use of the java.util.Sca
 The project contains a JUnit test suite ( LoginTest.java ) to ensure that all methods are tested.
 deliver the right values of both the booleans and strings as set in the project requirements.
 
+https://github.com/WeleOlona/POE-Part-1.git
+
 <img width="949" height="408" alt="Screenshot 2026-04-09 201620" src="https://github.com/user-attachments/assets/1f20378c-7355-4381-931e-be95d88e79f3" />
 
 <img width="1121" height="243" alt="Screenshot 2026-04-09 201917" src="https://github.com/user-attachments/assets/e68a4cd0-930c-4b62-a14f-8fc084ed260b" />
