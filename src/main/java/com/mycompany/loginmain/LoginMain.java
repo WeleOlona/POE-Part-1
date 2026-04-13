@@ -29,7 +29,7 @@ public class LoginMain {
         System.out.print("Enter Cell Phone Number (e.g., +27838968976): ");
         String cell = input.nextLine();
 
-        //cotinue and display message
+        //continue and display message
         String regMessage = authSystem.registerUser(user, pass, cell, fName, lName);
         System.out.println("\n" + regMessage);
 
